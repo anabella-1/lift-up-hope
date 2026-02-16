@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/x-icon" href="images/foundationlogo.png" />
+  <title>Contact & Feedback</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="sample.css">  
+</head>
+<body>
+  <header>
+      <div class="logo">Lift Up Hope</div>
+      
+        <h1 id="contact">Contact Us</h1>
+        <!-- Mobile Toggle Button -->
+      <button class="menu-toggle" id="menuToggle">☰</button>
+
+        <nav>
+             <a href="index.html">Home</a>
+             <a href="about.html">About</a>
+             <a href="get involved.html">Get Involved</a>
+             <a href="gallery.html">Gallery</a>
+             <a href="contact.html">Contact Us</a>
+             <button id="darkToggle" class="btn">Dark Mode</button>
+        </nav>
+  </header>
+
+  <div class="contact-wrapper">
+
+     <div class="info-box">
+       <h2>For inquiries</h2>
+
+       <div class="info-item">
+         <i class="fa-regular fa-envelope"></i>
+        <div>
+          <strong>Email</strong>
+          <p>info@liftuphopechildrensfoundation.org</p>
+        </div>
+ </div>
+    
+
+      <div class="info-item">
+        <i class="fa-solid fa-phone"></i>
+        <div>
+          <strong>Phone Number</strong>
+          <p>+256 000 567 890 <br>+256 789 001 123</br></p>
+        </div>
+      </div>
+
+      <div class="info-item">
+        <i class="fa-brands fa-whatsapp"></i>
+        <div>
+          <strong>WhatsApp</strong>
+          <p>+256 709 662 990</p>
+        </div>
+     </div>
+
+      <div class="info-item">
+        <i class="fa-brands fa-instagram"></i>
+        <div>
+          <strong>Instagram</strong>
+          <p>liftup hope childrens foundation</p>
+        </div>
+      </div>
+    
+    
+     <div class="info-item">
+       <i class="fa-solid fa-location-dot"></i>
+       <div>
+         <strong>Address</strong>
+         <p>Mengo, Kampala</p>
+       </div>
+     </div>
+    </div>
+
+    <div class="form-box">
+      <h2>Send a message</h2>
+    
+     <form id="contactForm">
+       <label><i class="fa fa-user"></i> Your Name:</label>
+       <input type="text" id="cname" required />
+
+       <label><i class="fa-regular fa-envelope"></i>Email Address:</label>
+       <input type="email" id="cemail" required />
+
+       <label><i class="fa fa-comment"></i> Message:</label>
+       <textarea id="cmessage" rows="4" required></textarea>
+
+       <button type="submit">Send Message</button>
+       <div id="contactSuccess" class="success">Your message has been sent!</div>
+      </form>
+    </div>
+ </div>
+   <!--footer-->
+    <footer>
+        <p>&copy; 2026 Lift Up Hope Children's Foundation | All rights reserved.</p>
+    </footer>
+
+    <script src="contactscript.js"></script>
+    <script src="darkmode.js"></script>
+</body>
+</html>

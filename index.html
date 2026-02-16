@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="images/foundationlogo.png" />
+    <title>LIFT UP HOPE</title>
+    <link rel="stylesheet" href="sample.css" />
+  </head>
+  <body>
+    <!--header-->
+    <header>
+      <div class="logo">Lift Up<span>Hope</span></div>
+      <!-- Mobile Toggle Button -->
+      <button class="menu-toggle" id="menuToggle">☰</button>
+
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="get involved.html">Get Involved</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact Us</a>
+        <button id="darkToggle" class="btn">Dark Mode</button>
+      </nav>
+    </header>
+
+    <!--hero section-->
+    <section class="hero">
+      <!--<div class="logo">
+        <img src="images/foundationlogo.png" alt="Lift Up Hope Children Foundation logo" class="site-logo">
+      </div>-->
+      <div class="hero-content">
+        <h1><i>Empowering a Child's Future</i></h1>
+        <p>We support vulnerable children through education , care and hope.</p>
+        <a href="#contact" class="btn">Donate Now</a>
+        <a href="#" class="btn secondary">Volunteer</a>
+      </div>
+    </section>
+
+    <!--about section-->
+    <section class="about reveal" id="about">
+      <h2>
+        <i><b>Who We Are</b></i>
+      </h2>
+      <p>
+        'Lift Up Hope' Foundation is a non-profit organization dedicated to
+        improving the lives of needy children by providing education,food and
+        healthcare.
+      </p>
+      <div class="about-video">
+        <video
+          autoplay
+          muted
+          loop
+          playinline
+          controls
+          poster="images/video-poster.jpg"
+        >
+          <source src="videos/foundationvideo2.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <a href="about.html" class="btn">Learn More</a>
+    </section>
+
+    <!--programs section-->
+    <section class="programs reveal" id="programs">
+      <h2>Our Programs</h2>
+      <div class="program-cards">
+        <div class="card">
+          <h3>Education Support</h3>
+          <p>School fees,books and mentorship.</p>
+        </div>
+        <div class="card">
+          <h3>Food & Nutrition</h3>
+          <p>Daily meals for vulnerable children.</p>
+        </div>
+        <div class="card">
+          <h3>Health care</h3>
+          <p>Medical support and health awareness.</p>
+        </div>
+      </div>
+    </section>
+
+    <!--gallery section-->
+    <section class="gallery reveal">
+      <h2>Our Work In Action</h2>
+      <p>Moments from our outreach and community programs.</p>
+      <div class="gallery-grid">
+        <img src="images/foundation20.jpg" alt="Happy Children" />
+        <img src="images/foundation19.jpg" alt="Food Donation" />
+        <img src="images/foundation18.jpg" alt="Education Support" />
+      </div>
+      <a href="gallery.html" class="btn">View Full Gallery</a>
+    </section>
+
+    <!--donate section-->
+    <section class="donate reveal">
+      <h2>Support Our Cause</h2>
+      <p>
+        Your donation helps us provide education, food, and healthcare to needy
+        children.
+      </p>
+
+      <div class="donate box">
+        <h3>How to Donate</h3>
+        <p><strong>Mobile Money:</strong> +256 7xxx xxx xxx</p>
+        <p><strong>Bank:</strong> ABC bank</p>
+        <p><strong>Account Name:</strong>Lift Up Hope</p>
+        <p><strong>Account Number:</strong>1234567</p>
+
+        <a href="contact.html" class="btn">Confirm Donation</a>
+      </div>
+    </section>
+
+    <!--contact section-->
+    <section class="contact reveal" id="contact">
+      <h2>Get In Touch</h2>
+      <p>Please reach out to us to for more information.</p>
+      <a href="contact.html" class="btn">Contact Us</a>
+    </section>
+
+    <!--footer-->
+    <footer>
+      <p>
+        &copy; 2026 Lift Up Hope Children's Foundation | All rights reserved.
+      </p>
+    </footer>
+
+    <!--whatsapp button-->
+    <a href="https://wa.me/256709662260" class="whatsapp-btn" target="_blank">
+      Whatsapp Us
+    </a>
+
+    <!--lightbox-->
+    <div class="lightbox" id="lightbox">
+      <span class="close">&times;</span>
+      <img id="ligtbox-img" />
+      <p id="lightbox-caption"></p>
+    </div>
+
+    <script>
+      const images = document.querySelectorAll(".gallery-item img");
+      const lightbox = document.getElementbyId("lightbox");
+      const ligtboximg = document.getElementById("lightbox-img");
+      const caption = document.getElementById("lightbox-caption");
+      const close = document.querySelector(".close");
+
+      images.forEach((img) => {
+        img.addEventListener("click", () => {
+          lightbox.style.display = "flex";
+          lightboximg.src = img.src;
+          caption.innerText = img.alt;
+        });
+      });
+    </script>
+    <script src="reveal.js"></script>
+    <script src="lightbox.js"></script>
+    <script src="darkmode.js"></script>
+  </body>
+</html>
